@@ -1,0 +1,7 @@
+query CartDeliveryOptionsTransformRunInput {
+  deliveryCustomization {
+    metafield(namespace: "$app:pagekit-delivery-customization", key: "function-configuration") {
+      jsonValue
+    }
+  }
+}

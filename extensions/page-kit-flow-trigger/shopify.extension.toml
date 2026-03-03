@@ -1,0 +1,15 @@
+[[extensions]]
+name = "PageKit Flow trigger"
+handle = "pagekit-flow-trigger"
+type = "flow_trigger"
+uid = "bf85066e-8dbe-8d01-dc97-27873b20a5d0743d0aa2"
+description = "Your description"
+
+[settings]
+
+  [[settings.fields]]
+  type = "customer_reference"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "Your field key"

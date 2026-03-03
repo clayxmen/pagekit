@@ -1,0 +1,21 @@
+api_version = "2026-01"
+
+[[extensions]]
+name = "t:name"
+handle = "pagekit-fulfillment-constraints"
+type = "function"
+uid = "18945774-7635-7655-e460-73f7243cfc0ae322e30b"
+description = "t:description"
+
+  [[extensions.targeting]]
+  target = "cart.fulfillment-constraints.generate.run"
+  input_query = "src/cart_fulfillment_constraints_generate_run.graphql"
+  export = "cart-fulfillment-constraints-generate-run"
+
+  [extensions.build]
+  command = ""
+  path = "dist/function.wasm"
+
+  [extensions.ui.paths]
+  create = "/"
+  details = "/"

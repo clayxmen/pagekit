@@ -1,0 +1,6 @@
+[[extensions]]
+name = "pagekit-subscription-link"
+type = "subscription_link_extension"
+handle = "pagekit-subscription-link"
+uid = "c56d9659-5519-0922-c827-a912210413905e169230"
+pattern = "/subscriptions{?customer_id,shop}&id={contract_id}"

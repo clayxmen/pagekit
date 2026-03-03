@@ -1,0 +1,21 @@
+api_version = "2026-01"
+
+[[extensions]]
+name = "t:name"
+handle = "pagekit-payment-customization"
+type = "function"
+uid = "e362497c-a0b3-04e9-935b-da2969b0f3cede3e1418"
+description = "t:description"
+
+  [[extensions.targeting]]
+  target = "cart.payment-methods.transform.run"
+  input_query = "src/cart_payment_methods_transform_run.graphql"
+  export = "cart-payment-methods-transform-run"
+
+  [extensions.build]
+  command = ""
+  path = "dist/function.wasm"
+
+  [extensions.ui.paths]
+  create = "/"
+  details = "/"

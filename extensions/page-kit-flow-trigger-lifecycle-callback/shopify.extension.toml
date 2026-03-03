@@ -1,0 +1,6 @@
+[[extensions]]
+name = "PageKit Flow trigger lifecycle callback"
+handle = "pagekit-flow-trigger-lifecycle-callback"
+type = "flow_trigger_lifecycle_callback"
+uid = "e9c8a71a-2694-f2fa-92c7-da339ce80d43ea16c047"
+url = "https://url.com/api/callback"

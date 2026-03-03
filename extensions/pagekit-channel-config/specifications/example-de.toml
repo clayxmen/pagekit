@@ -1,0 +1,23 @@
+handle = "example-de"
+label = "example.de"
+icon = "example-channel-icon.svg"
+productFeedManagement = "manual"
+
+[capabilities]
+bundles = true
+digitalProducts = true
+subscriptions = false
+combinedListings = true
+unlistedProducts = true
+scheduledPublishing = true
+
+[requirements]
+webPresence = true
+orderInsertion = false
+
+[[countries]]
+code = "DE"
+languages = [
+  "de"
+]
+currency = "EUR"

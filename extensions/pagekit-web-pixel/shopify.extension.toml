@@ -1,0 +1,16 @@
+name = "pagekit-web-pixel"
+type = "web_pixel_extension"
+uid = "07d83f8a-9c6a-8607-5b1f-5ba1bde26be32efa006f"
+
+runtime_context = "strict"
+
+[settings]
+type = "object"
+
+[settings.fields.accountID]
+name = "Account ID"
+description = "Account ID"
+type = "single_line_text_field"
+validations =  [
+  { name = "min", value = "1" }
+]

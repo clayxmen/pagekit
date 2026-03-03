@@ -1,0 +1,25 @@
+api_version = "unstable"
+
+[[extensions]]
+name = "t:name"
+handle = "pagekit-pickup-point-delivery-option-generators"
+type = "function"
+uid = "7c2b081d-82e3-4f1e-7f08-bc3cecc6b52bcbe74304"
+
+  [[extensions.targeting]]
+  target = "purchase.pickup-point-delivery-option-generator.fetch"
+  input_query = "src/fetch.graphql"
+  export = "fetch"
+
+  [[extensions.targeting]]
+  target = "purchase.pickup-point-delivery-option-generator.run"
+  input_query = "src/run.graphql"
+  export = "run"
+
+  [extensions.build]
+  command = ""
+  path = "dist/function.wasm"
+
+  [extensions.ui.paths]
+  create = "/"
+  details = "/"

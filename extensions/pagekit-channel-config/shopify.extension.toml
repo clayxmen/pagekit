@@ -1,0 +1,7 @@
+[[extensions]]
+
+uid = "766a793d-8af7-67db-7ba8-50b43d718d44de9533a5"
+
+type = "channel_config"
+handle = "pagekit-channel-config"
+create_legacy_channel_on_app_install = false

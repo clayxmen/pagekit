@@ -1,0 +1,20 @@
+api_version = "unstable"
+
+[[extensions]]
+name = "t:name"
+handle = "pagekit-local-pickup-delivery-option-generators"
+type = "function"
+uid = "ee8255d6-10a1-1aa1-6214-851c4e06a42ff693942b"
+
+  [[extensions.targeting]]
+  target = "purchase.local-pickup-delivery-option-generator.run"
+  input_query = "src/run.graphql"
+  export = "run"
+
+  [extensions.build]
+  command = ""
+  path = "dist/function.wasm"
+
+  [extensions.ui.paths]
+  create = "/"
+  details = "/"

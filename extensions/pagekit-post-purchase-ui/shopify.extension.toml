@@ -1,0 +1,11 @@
+name = "pagekit-post-purchase-ui"
+type = "checkout_post_purchase"
+uid = "1b26883c-649d-cbac-74e4-66e34cf84547e87df16a"
+
+# [[metafields]]
+# namespace = "my-namespace"
+# key = "my-key"
+
+# [[metafields]]
+# namespace = "my-namespace"
+# key = "my-key-2"

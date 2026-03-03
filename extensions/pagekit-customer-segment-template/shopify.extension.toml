@@ -1,0 +1,17 @@
+api_version = "2025-10"
+
+[[extensions]]
+# Change the merchant-facing name of the extension in locales/en.default.json
+name = "t:title"
+handle = "pagekit-customer-segment-template"
+type = "ui_extension"
+uid = "dfb749e9-d7ec-c822-e2cf-96a90b31ebc2edf0c4e7"
+description = "t:description"
+[[extensions.targeting]]
+module = "./src/CustomerSegmentTemplateData.js"
+target = "admin.customers.segmentation-templates.data"
+
+
+# Valid extension points:
+
+# - admin.customers.segmentation-templates.data

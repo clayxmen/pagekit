@@ -1,0 +1,20 @@
+[[extensions]]
+name = "PageKit Flow action"
+handle = "pagekit-flow-action"
+type = "flow_action"
+uid = "214c311c-f5e7-3182-1e62-167b6923ea59fd5a8249"
+description = "Your description"
+runtime_url = "https://url.com/api/execute"
+
+[settings]
+
+  [[settings.fields]]
+  type = "customer_reference"
+  required = true
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "your-field-key"
+  name = "Display name"
+  description = "A description of my field"
+  required = true

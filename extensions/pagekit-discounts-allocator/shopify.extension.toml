@@ -1,0 +1,21 @@
+api_version = "unstable"
+
+[[extensions]]
+name = "t:name"
+handle = "pagekit-discounts-allocator"
+type = "function"
+uid = "727c621d-224f-5e1d-d1a3-88babf1bf3e44176dd07"
+description = "t:description"
+
+  [[extensions.targeting]]
+  target = "purchase.discounts-allocator.run"
+  input_query = "src/run.graphql"
+  export = "run"
+
+  [extensions.build]
+  command = ""
+  path = "dist/function.wasm"
+
+  [extensions.ui.paths]
+  create = "/"
+  details = "/"

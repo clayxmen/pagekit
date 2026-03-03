@@ -1,0 +1,26 @@
+api_version = "2025-10"
+
+
+[[extensions]]
+# Change the merchant-facing name of the extension in locales/en.default.json
+name = "t:name"
+handle = "pagekit-admin-purchase-options-action"
+type = "ui_extension"
+uid = "3cfcc9a0-de42-f57f-bdbc-9eae5007197117633ded"
+
+# Both targets need to be specified for the extensions to work
+[[extensions.targeting]]
+module = "./src/ProductExtension.jsx"
+target = "admin.product-purchase-option.action.render"
+
+[[extensions.targeting]]
+module = "./src/ProductVariantExtension.jsx"
+target = "admin.product-variant-purchase-option.action.render"
+
+# Valid extension targets:
+
+# Product index and detail pages
+# - admin.product-purchase-option.action.render
+
+# Product variant detail pages
+# - admin.product-variant-purchase-option.action.render
