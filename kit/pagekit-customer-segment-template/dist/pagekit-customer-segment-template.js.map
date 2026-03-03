@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": ["../../../../extensions/pagekit-customer-segment-template/src/CustomerSegmentTemplateData.js", "<stdin>"],
+  "sourceRoot": "C:/VPS/golive/pagekit/extensions/pagekit-customer-segment-template/src",
+  "sourcesContent": ["export default async function extension() {\r\n  const {i18n} = shopify;\r\n\r\n  const query = 'number_of_orders = 1 AND products_purchased MATCHES (id = product_id)';\r\n  const queryToInsert = 'number_of_orders = 1 AND products_purchased MATCHES (id = | )';\r\n\r\n  return [{\r\n    title: i18n.translate('title'),\r\n    description: i18n.translate('description'),\r\n    createdOn: new Date('2023-08-15').toISOString(),\r\n    query,\r\n    queryToInsert\r\n  }];\r\n}\r\n", "import Target_0 from './src/CustomerSegmentTemplateData.js';shopify.extend('admin.customers.segmentation-templates.data', (...args) => Target_0(...args));"],
+  "mappings": "mNAAA,SAAOA,GAAmC,QAAAC,EAAA,sBACxC,GAAM,CAAC,KAAAC,CAAI,EAAI,QAKf,MAAO,CAAC,CACN,MAAOA,EAAK,UAAU,OAAO,EAC7B,YAAaA,EAAK,UAAU,aAAa,EACzC,UAAW,IAAI,KAAK,YAAY,EAAE,YAAY,EAC9C,MAPY,wEAQZ,cAPoB,+DAQtB,CAAC,CACH,GCb4D,QAAQ,OAAO,8CAA+C,IAAIC,IAASC,EAAS,GAAGD,CAAI,CAAC",
+  "names": ["extension", "__async", "i18n", "args", "extension"]
+}
